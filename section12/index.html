@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="app">
+      <p>{{message}}</p>
+      <input type="text" v-model="message" />
+      <pre>{{$data}}</pre>
+      <!-- <textarea>{{message}}</textarea> -->
+      <textarea v-model="message"></textarea><br />
+      <label for="checkbox">{{ checked }}</label>
+      <input type="checkbox" id="checkbox" v-model="checked" /><br />
+      <label for="red">Red</label>
+      <input type="checkbox" id="red" value="Red" v-model="colors" />
+      <label for="red">Green</label>
+      <input type="checkbox" id="green" value="Green" v-model="colors" />
+      <label for="red">Blue</label>
+      <input type="checkbox" id="blue" value="Blue" v-model="colors" />
+      <p>{{colors}}</p>
+    </div>
+    <script src="https://unpkg.com/vue@3.1.5"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
